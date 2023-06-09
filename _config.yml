@@ -1,1 +1,50 @@
-theme: jekyll-theme-cayman
+# site settings
+
+title: Thant Thu Hein
+description: Backend Developer
+taglong: Thant Thu Hein | Backend Developer
+tagshort: Thant Thu Hein
+url: https://thantthuhein.github.io
+baseurl: ""
+permalink: pretty
+repo: https://github.com/thantthuhein/thantthuhein.github.io
+
+# author settings
+
+author:
+  name: Thant Thu Hein
+  email: thantthuhein97@gmail.com
+photo: https://res.cloudinary.com/dcs3zcs3v/image/upload/v1598252824/profile.jpg
+
+# build settings
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
